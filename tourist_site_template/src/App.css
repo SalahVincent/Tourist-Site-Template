@@ -2,32 +2,50 @@
   font-family: Mulish, sans-serif;
 }
 
+.header {
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.61);
+  backdrop-filter: blur(2px);
+  z-index: 5;
+}
+
 .header1 {
   background:#304f47;
   color: white;
   display: flex;
   justify-content: space-between;
   padding: 0 10%;
+  height: 40px;
+}
+
+.header1 img {
+  width: 100%;
 }
 
 .address-box {
   display: flex;
+  gap: 12px;
+  align-items: center;
 }
 
 .address1,
 .address2 {
   display: flex;
+  align-items: center;
 }
 
 .socials {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 8px;
 }
 
 .header2 {
   display: flex;
   justify-content: space-between;
-  padding: 0 10%;
+  padding: 0 8%;
 }
 
 .header2 ul {
@@ -38,4 +56,14 @@
 
 .header2 ul li {
   display: flex;
+}
+
+footer h3 {
+  font-family: Lora, sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+}
+
+.ul {
+  line-height: 28px;
 }
