@@ -52,7 +52,7 @@ const HomePage = () => {
       </div>
       <nav className='header2'>
         <ul className=''>
-        <div><img src="./Rectangle 1.png" alt="" /></div>
+        <div><img className='rounded-[50%]'src="./Rectangle 1.png" alt="" /></div>
         <li onClick={() => handleChange('Home')}>Home</li>
         <li onClick={() => handleChange('About')}>About</li>
         <li onClick={() => handleChange('Package')}>Tour package</li>
