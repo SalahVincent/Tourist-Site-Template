@@ -24,27 +24,10 @@ export const Buttons = () => {
   )
 }
 
-const Client = () => {
+export const BookBox = ({display, bg, position}) => {
   return (
-  <div className='rounded-[5px] my-6 p-4 flex flex-col items-center shadow-[0_3px_5px_#0000005e] bg-[]'>
-      <img
-      className='my-3 w-30'
-      src="./Ellipse 135.png" alt="" />
-      <h1 className='clienth text-center'>Emma Watson</h1>
-      <p className=''>I recently went on a tour with XYZ Tourism Company and was extremely impressed with the level of professionalism and organization</p>
-    </div>
-  )
-}
-
-export const Home = () => {
-
-  return (
-    <>
-    <Hero
-    head="Experience the beauty of Rwanda with us"
-    par="Discover the Land of A Thousand Hills"/>
-  <div className='book-box'>
-    <form action="" className='flex bg-gray-100 rounded-[10px] h-[60%] self-center w-[30%] p-[10px] border-none'>
+    <div className={`book-box bg-[${bg}] ${position}`}>
+    <form action="" className={`${display} bg-gray-100 rounded-[10px] h-[60%] self-center w-[30%] p-[10px] border-none`}>
     <input type="text" placeholder='Search activities or Destinations' className=' border-none text-black text-[15px] w-[100%]'/>
     <img src="./search.png" alt="" />
     </form>
@@ -73,6 +56,33 @@ export const Home = () => {
         <button className='text-white border border-[#304f47] bg-[#c7923e] rounded-[8px] px-13.5 py-2.5'>Book Now</button>
       </div>
   </div>
+  )
+}
+
+const Client = () => {
+  return (
+  <div className='rounded-[5px] my-6 px-4 py-10 flex flex-col items-center shadow-[0_3px_5px_#0000005e] bg-[]'>
+      <img
+      className='my-3 w-30'
+      src="./Ellipse 135.png" alt="" />
+      <h1 className='clienth text-center'>Emma Watson</h1>
+      <p className=''>I recently went on a tour with XYZ Tourism Company and was extremely impressed with the level of professionalism and organization</p>
+    </div>
+  )
+}
+
+export const Home = () => {
+
+  return (
+    <>
+    <Hero
+    head="Experience the beauty of Rwanda with us"
+    par="Discover the Land of A Thousand Hills"/>
+  <BookBox
+  display={`flex`}
+  bg={`#304f47`}
+  position={`relative`}
+  />
   <section className='packages'>
     <div className='package-intro'>
       <p className='p'>Choose your Package</p>
@@ -142,7 +152,7 @@ export const Home = () => {
       <h2>What Our Clients Say About Us</h2>
     </div>
 
-    <div className='grid grid-cols-3 px-[8%] py-17 gap-4'>
+    <div className='grid grid-cols-3 px-[11%] py-17 gap-9'>
     <Client />
     <Client />
     <Client />

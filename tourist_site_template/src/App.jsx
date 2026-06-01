@@ -81,7 +81,7 @@ const HomePage = () => {
           </ul>
           <p className='font-[700] py-[6px]'>Subscribe to our newspaper</p>
           <div className='flex gap-[5px]'>
-            <form action="" className='bg-white w-[75%] h-[50px] rounded-[8px] p-[10px]'>
+            <form action="" className='bg-white w-[75%] h-[50px] rounded-[8px] p-[10px] flex justify-center items-center'>
     <input type="text" placeholder='Input your email here' className=' border-none text-black text-[15px] w-[100%]'/>
     </form>
     <button className='flex justify-center items-center rounded-[8px] bg-[#c7923e] w-[50px]'>

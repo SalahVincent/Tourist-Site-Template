@@ -7,3 +7,14 @@
 .hero-sec-about {
   padding-left: 10%;
 }
+
+.head {
+  font-family: Lora, sans-serif;
+  font-weight: 600;
+  font-size: 60px;
+  text-align: center;
+}
+
+.welcome {
+  font-size: 20px;
+}
