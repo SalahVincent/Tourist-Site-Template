@@ -12,15 +12,27 @@ export const Hero = ({head, par, items, children, tc}) => {
   )
 }
 
-export const Buttons = ({end}) => {
+export const Buttons = () => {
   return (
-    <div className={`gap-[8px] flex self-${end} mx-[10%] my-[3%]`}>
+    <div className={`gap-[8px] flex self-end mx-[10%] my-[3%]`}>
         <button className='p-[12px] rounded-[8px] flex items-center border-[2px] border-[#c7923e]'>
           <img className='' src="./Group 18 (1).png" alt="" /></button>
         <button className='bg-[#c7923e] p-[14px] rounded-[8px] flex items-center'>
           <img src="./Group 18 (2).png" alt="" />
       </button>
       </div>
+  )
+}
+
+const Client = () => {
+  return (
+  <div className='rounded-[5px] my-6 p-4 flex flex-col items-center shadow-[0_3px_5px_#0000005e] bg-[]'>
+      <img
+      className='my-3 w-30'
+      src="./Ellipse 135.png" alt="" />
+      <h1 className='clienth text-center'>Emma Watson</h1>
+      <p className=''>I recently went on a tour with XYZ Tourism Company and was extremely impressed with the level of professionalism and organization</p>
+    </div>
   )
 }
 
@@ -74,8 +86,7 @@ export const Home = () => {
     </div>
     </div>
 
-    <Buttons
-    end={`end`}/>
+    <Buttons/>
     
       <div className='flex gap-[3%] py-[2%] px-[9%]'>
         <div>
@@ -129,6 +140,12 @@ export const Home = () => {
     <div className='packages'>
       <p className='p'>Our Traveller Say</p>
       <h2>What Our Clients Say About Us</h2>
+    </div>
+
+    <div className='grid grid-cols-3 px-[8%] py-17 gap-4'>
+    <Client />
+    <Client />
+    <Client />
     </div>
   </section>
   </>
