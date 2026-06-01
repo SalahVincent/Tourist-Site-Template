@@ -100,22 +100,22 @@ export const Home = () => {
     
       <div className='flex gap-[3%] py-[2%] px-[9%]'>
         <div>
-          <img className='h-[205px] mb-2' src="Image Placeholder (28).png" alt="" />
+          <img className='h-[250px] mb-2' src="Image Placeholder (28).png" alt="" />
           <h3 className=''>Kigali</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretum, egestas sed sit.</p>
         </div>
         <div>
-        <img className='h-[205px] mb-2' src="Image Placeholder (29).png" alt="" />
+        <img className='h-[250px] mb-2' src="Image Placeholder (29).png" alt="" />
         <h3>Huye</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretum, egestas sed sit.</p>
         </div>
         <div>
-        <img className='h-[205px] mb-2' src="Image Placeholder (30).png" alt="" />
+        <img className='h-[250px] mb-2' src="Image Placeholder (30).png" alt="" />
         <h3>Rubavu</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretum, egestas sed sit.</p>
         </div>
         <div>
-        <img className='h-[205px] mb-2' src="Image Placeholder (31).png" alt="" />
+        <img className='h-[250px] mb-2' src="Image Placeholder (31).png" alt="" />
         <h3>Musanze</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretum, egestas sed sit.</p>
       </div>
