@@ -1,5 +1,4 @@
 .hero-sec {
-  height: 40rem;
   display: flex;
   flex-direction: column;
   background: linear-gradient(#0000003f), url('../../../public/Image_Placeholder\(3\).png');
@@ -15,7 +14,6 @@
   font-weight: 600;
   font-size: 60px;
   width: 65%;
-
 }
 
 .hero-sec h2 {

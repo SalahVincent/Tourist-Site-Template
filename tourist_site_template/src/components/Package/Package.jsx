@@ -1,15 +1,26 @@
 import React from 'react'
 import BestPackage from '../bestpackage/BestPackage'
 import '../Home/home.css'
+import {Hero, Buttons} from '../Home/Home'
+
+export const Text = ({shead, det}) => {
+  return (
+  <h2>{shead} <span className='text-[#c7923e] f-[Lora]'>{det}</span></h2>
+  )
+}
 
 const Package = () => {
   return (
     <>
-    <div className='hero-sec items-center'>
-        <div className='align-center flex flex-col text-center'><h1 className='w-[100%]'>Tour Package</h1>
-        <h2>Home <span className='text-[#c7923e] f-[Lora]'>Package</span></h2>
-        </div>
-      </div>
+    <Hero
+    head={`Tour Package`}
+    items={'center'}
+    tc={'center'}>
+      <Text
+      shead={`Home`}
+      det={`Package`}
+      />
+    </Hero>
   <section className="packages">
         <div className="package-intro">
           <p className="p">Choose your Package</p>
@@ -19,6 +30,7 @@ const Package = () => {
     <BestPackage />
     <BestPackage />
     <BestPackage />
+    <Buttons/>
       </section>
 
     

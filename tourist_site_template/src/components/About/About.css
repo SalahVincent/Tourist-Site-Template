@@ -1,0 +1,9 @@
+.hero-sec-about h1 {
+  font-family: Lora, sans-serif;
+  font-weight: 600;
+  font-size: 55px;
+}
+
+.hero-sec-about {
+  padding-left: 10%;
+}

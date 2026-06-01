@@ -2,13 +2,35 @@ import React from 'react'
 import './home.css'
 import BestPackage from '../bestpackage/BestPackage'
 
-const Home = () => {
+export const Hero = ({head, par, items, children, tc}) => {
+  return (
+    <div className={`hero-sec h-[40rem] items-${items} text-${tc}`}>
+      <h1 className='font-[Lora,_sans-serif] font-semibold text-[60px] w-[65%]'>{head}</h1>
+      <p className='font-[25px]'>{par}</p>
+      {children}
+    </div>
+  )
+}
+
+export const Buttons = ({end}) => {
+  return (
+    <div className={`gap-[8px] flex self-${end} mx-[10%] my-[3%]`}>
+        <button className='p-[12px] rounded-[8px] flex items-center border-[2px] border-[#c7923e]'>
+          <img className='' src="./Group 18 (1).png" alt="" /></button>
+        <button className='bg-[#c7923e] p-[14px] rounded-[8px] flex items-center'>
+          <img src="./Group 18 (2).png" alt="" />
+      </button>
+      </div>
+  )
+}
+
+export const Home = () => {
+
   return (
     <>
-    <div className='hero-sec'>
-      <h1>Experience the beauty of Rwanda with us</h1>
-    <p>Discover the Land of A Thousand Hills</p>
-  </div>
+    <Hero
+    head="Experience the beauty of Rwanda with us"
+    par="Discover the Land of A Thousand Hills"/>
   <div className='book-box'>
     <form action="" className='flex bg-gray-100 rounded-[10px] h-[60%] self-center w-[30%] p-[10px] border-none'>
     <input type="text" placeholder='Search activities or Destinations' className=' border-none text-black text-[15px] w-[100%]'/>
@@ -52,32 +74,27 @@ const Home = () => {
     </div>
     </div>
 
-    <div className='gap-[8px] flex self-end mx-[10%] my-[3%]'>
-        <button className='p-[12px] rounded-[8px] flex items-center border-[2px] border-[#c7923e]'>
-          <img className='' src="./Group 18 (1).png" alt="" /></button>
-        <button className='bg-[#c7923e] p-[14px] rounded-[8px] flex items-center'>
-          <img src="./Group 18 (2).png" alt="" />
-      </button>
-      </div>
+    <Buttons
+    end={`end`}/>
     
-      <div className='flex gap-[3%] py-[2%]'>
+      <div className='flex gap-[3%] py-[2%] px-[9%]'>
         <div>
-          <img src="Image Placeholder (28).png" alt="" />
+          <img className='h-[205px] mb-2' src="Image Placeholder (28).png" alt="" />
           <h3 className=''>Kigali</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretum, egestas sed sit.</p>
         </div>
         <div>
-        <img src="Image Placeholder (29).png" alt="" />
+        <img className='h-[205px] mb-2' src="Image Placeholder (29).png" alt="" />
         <h3>Huye</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretum, egestas sed sit.</p>
         </div>
         <div>
-        <img src="Image Placeholder (30).png" alt="" />
+        <img className='h-[205px] mb-2' src="Image Placeholder (30).png" alt="" />
         <h3>Rubavu</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretum, egestas sed sit.</p>
         </div>
         <div>
-        <img src="Image Placeholder (31).png" alt="" />
+        <img className='h-[205px] mb-2' src="Image Placeholder (31).png" alt="" />
         <h3>Musanze</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat elit sed pretum, egestas sed sit.</p>
       </div>

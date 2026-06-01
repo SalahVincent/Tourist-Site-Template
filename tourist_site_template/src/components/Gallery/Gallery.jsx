@@ -1,16 +1,19 @@
 import React from "react";
+import {Hero} from "../Home/Home"
+import {Text} from "../Package/Package"
 
 const Gallery = () => {
   return (
     <>
-      <div className="hero-sec items-center">
-        <div>
-          <h1>Gallery</h1>
-          <h2>
-            Home <span className="text-[#c7923e]">Gallery</span>
-          </h2>
-        </div>
-      </div>
+      <Hero
+          head={`Gallery`}
+          items={'center'}
+          tc={'center'}>
+            <Text
+            shead={`Home`}
+            det={`Gallery`}
+            />
+          </Hero>
       <section className="packages">
 
         <div className="flex m-[20px] gap-[5px] p-[5px]">

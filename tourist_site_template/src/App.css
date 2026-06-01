@@ -67,3 +67,7 @@ footer h3 {
 .ul {
   line-height: 28px;
 }
+
+.navtext {
+  cursor: pointer;
+}
