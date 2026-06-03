@@ -1,13 +1,9 @@
 import React from 'react'
 import BestPackage from '../bestpackage/BestPackage'
 import '../Home/home.css'
-import {Hero, Buttons} from '../Home/Home'
-
-export const Text = ({shead, det}) => {
-  return (
-  <h2>{shead} <span className='text-[#c7923e] f-[Lora]'>{det}</span></h2>
-  )
-}
+import { Hero } from '../ui/Hero'
+import { Buttons } from '../ui/Buttons'
+import { Text } from '../ui/Text'
 
 const Package = () => {
   return (

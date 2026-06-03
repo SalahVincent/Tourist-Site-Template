@@ -26,15 +26,16 @@ const Form = () => {
                 <div className='input'>
                     <select>
                         <option value="value2">+250</option>
-                        <option value="value3">+237</option><img src='./chevron-bottom (1).png'/></select>
+                        <option value="value3">+237</option></select>
                         <input type="text" placeholder='Input your Phone Number'/></div>
             </div>
             <div className='w-[100%] my-[10px]'>
                 <p>Message</p>
                 <input type="text"  className='message-input pb-[100px] pt-[10px] px-[10px]' placeholder='Write a message'/>
             </div>
+        <button className='text-white bg-[#c7923e] rounded-[8px] px-13.5 py-2.5'>Submit</button>
         </form>
-        <button className='text-white bg-[#c7923e] rounded-[8px] px-13.5 py-2.5' action='submit'>Submit</button>
+        
     </div></>
   )
 }

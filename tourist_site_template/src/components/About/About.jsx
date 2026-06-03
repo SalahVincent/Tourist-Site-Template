@@ -1,6 +1,5 @@
 import React from "react";
 import './About.css'
-import { BookBox } from "../Home/Home";
 
 const About = () => {
   return (
@@ -13,15 +12,15 @@ const About = () => {
             <div className="flex gap-6">
             <div>
               <div><span>Guest</span>
-              <div>2 Adult <img src="" alt="" /></div></div>
+              <div>2 Adult <img src="./chevron-bottom.png" alt="dropdown" /></div></div>
             </div>
             <div>
               <div><span>Date</span>
-              <div>12 -13 April 2021<img src="" alt="" /></div></div>
+              <div>12 -13 April 2021<img src="./chevron-bottom.png" alt="dropdown" /></div></div>
             </div>
             <div>
               <div><span>Package</span>
-              <div>Akgera Tour<img src="" alt="" /></div></div>
+              <div>Akgera Tour<img src="./chevron-bottom.png" alt="dropdown" /></div></div>
             </div>
           </div>
           <button className="px-6 rounded-[8px] bg-[#304f47] text-white">Book Now</button>

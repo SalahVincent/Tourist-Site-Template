@@ -1,8 +1,8 @@
 import React from "react";
 import Form from "../Form/Form.jsx";
 import "./Contact.css";
-import { Hero } from "../Home/Home";
-import { Text } from "../Package/Package";
+import { Hero } from "../ui/Hero.jsx";
+import { Text } from "../ui/Text.jsx";
 
 const Contact = () => {
   return (
@@ -32,13 +32,13 @@ const Contact = () => {
         </div>
         <div className="box box border-[#e1e1e1] border-[2px] rounded-[25px] px-[25px] py-[15px] leading-[30px] w-[300px]">
           <p>Email & phone</p>
-          <div>
-            <img src="" alt="" />
-            +250 784 688 641
+          <div className="flex items-center">
+            <img className="h-[20px]" src="./Vector (2).png" alt="contact_num" />
+            <span>+250 784 688 641</span>
           </div>
-          <div>
-            <img src="" alt="" />
-            bbonteemma@gmail.com
+          <div className="flex items-center">
+            <img className="h-[20px]" src="./Vector (3).png" alt="contact_email" />
+            <span>bbonteemma@gmail.com</span>
           </div>
         </div>
         <div className="box box border-[#e1e1e1] border-[2px] rounded-[25px] px-[25px] py-[15px] leading-[30px] w-[300px]">

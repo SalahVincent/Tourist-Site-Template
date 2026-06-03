@@ -1,6 +1,6 @@
 import React from "react";
-import {Hero} from "../Home/Home"
-import {Text} from "../Package/Package"
+import { Hero } from "../ui/Hero";
+import { Text } from "../ui/Text";
 
 const Gallery = () => {
   return (
