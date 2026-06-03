@@ -29,7 +29,7 @@ const Navbar = () => {
         <ul className='navtext'>
         <div><img className='rounded-[50%]'src="./Rectangle 1.png" alt="" /></div>
         <li
-        onClick={() => navigate('/home')}>Home</li>
+        onClick={() => navigate('/')}>Home</li>
         <li
         onClick={() => navigate('/about')}>About</li>
         <li
